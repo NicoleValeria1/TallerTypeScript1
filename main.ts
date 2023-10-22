@@ -6,10 +6,10 @@ const seriesTbody: HTMLElement = document.getElementById('series')!;
 function renderSeriesInTable(series: Serie[]): void {
   series.forEach(c => {
     let trElement = document.createElement("tr");
-    trElement.innerHTML = `<td>${c.id}</td>
-                           <td>${c.name}</td>
-                           <td>${c.channel}</td>
-                           <td>${c.seasons}</td>`;
+    trElement.innerHTML = `<td class="bg-light">${c.id}</td>
+                           <td class="bg-light">${c.name}</td>
+                           <td class="bg-light">${c.channel}</td>
+                           <td class="bg-light">${c.seasons}</td>`;
     seriesTbody.appendChild(trElement);
   });
 }
